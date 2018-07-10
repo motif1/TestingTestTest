@@ -6,3 +6,9 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
+  build:
+    docker:
+      - image: circleci/php:7.1.5-browsers
+    steps:
+      - checkout
+      - run: echo "A first hello"
