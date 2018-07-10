@@ -37,4 +37,11 @@ workflows:
       - one
       - two:
           requires:
+version: 2
+jobs:
+  deploy-job:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "cd:c8:3d:fb:db:7c:b2:6a:1a:ff:ba:72:00:5e:5e:d7"         
             - one
